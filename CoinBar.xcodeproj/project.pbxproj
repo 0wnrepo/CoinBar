@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDF9D6911F2C010700152FEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D6901F2C010700152FEE /* AppDelegate.swift */; };
+		EDF9D6931F2C010700152FEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D6921F2C010700152FEE /* ViewController.swift */; };
+		EDF9D6951F2C010700152FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF9D6941F2C010700152FEE /* Assets.xcassets */; };
+		EDF9D6981F2C010700152FEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF9D6961F2C010700152FEE /* Main.storyboard */; };
+		EDF9D6A41F2C010800152FEE /* CoinBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D6A31F2C010800152FEE /* CoinBarTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDF9D6A01F2C010800152FEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF9D6851F2C010700152FEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF9D68C1F2C010700152FEE;
+			remoteInfo = CoinBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDF9D68D1F2C010700152FEE /* CoinBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF9D6901F2C010700152FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDF9D6921F2C010700152FEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDF9D6941F2C010700152FEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDF9D6971F2C010700152FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDF9D6991F2C010700152FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF9D69A1F2C010700152FEE /* CoinBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoinBar.entitlements; sourceTree = "<group>"; };
+		EDF9D69F1F2C010800152FEE /* CoinBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF9D6A31F2C010800152FEE /* CoinBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinBarTests.swift; sourceTree = "<group>"; };
+		EDF9D6A51F2C010800152FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDF9D68A1F2C010700152FEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9D69C1F2C010800152FEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDF9D6841F2C010700152FEE = {
+			isa = PBXGroup;
+			children = (
+				EDF9D68F1F2C010700152FEE /* CoinBar */,
+				EDF9D6A21F2C010800152FEE /* CoinBarTests */,
+				EDF9D68E1F2C010700152FEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDF9D68E1F2C010700152FEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9D68D1F2C010700152FEE /* CoinBar.app */,
+				EDF9D69F1F2C010800152FEE /* CoinBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDF9D68F1F2C010700152FEE /* CoinBar */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9D6901F2C010700152FEE /* AppDelegate.swift */,
+				EDF9D6921F2C010700152FEE /* ViewController.swift */,
+				EDF9D6941F2C010700152FEE /* Assets.xcassets */,
+				EDF9D6961F2C010700152FEE /* Main.storyboard */,
+				EDF9D6991F2C010700152FEE /* Info.plist */,
+				EDF9D69A1F2C010700152FEE /* CoinBar.entitlements */,
+			);
+			path = CoinBar;
+			sourceTree = "<group>";
+		};
+		EDF9D6A21F2C010800152FEE /* CoinBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9D6A31F2C010800152FEE /* CoinBarTests.swift */,
+				EDF9D6A51F2C010800152FEE /* Info.plist */,
+			);
+			path = CoinBarTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDF9D68C1F2C010700152FEE /* CoinBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF9D6A81F2C010800152FEE /* Build configuration list for PBXNativeTarget "CoinBar" */;
+			buildPhases = (
+				EDF9D6891F2C010700152FEE /* Sources */,
+				EDF9D68A1F2C010700152FEE /* Frameworks */,
+				EDF9D68B1F2C010700152FEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinBar;
+			productName = CoinBar;
+			productReference = EDF9D68D1F2C010700152FEE /* CoinBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDF9D69E1F2C010800152FEE /* CoinBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF9D6AB1F2C010800152FEE /* Build configuration list for PBXNativeTarget "CoinBarTests" */;
+			buildPhases = (
+				EDF9D69B1F2C010800152FEE /* Sources */,
+				EDF9D69C1F2C010800152FEE /* Frameworks */,
+				EDF9D69D1F2C010800152FEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF9D6A11F2C010800152FEE /* PBXTargetDependency */,
+			);
+			name = CoinBarTests;
+			productName = CoinBarTests;
+			productReference = EDF9D69F1F2C010800152FEE /* CoinBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDF9D6851F2C010700152FEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = DevKiste;
+				TargetAttributes = {
+					EDF9D68C1F2C010700152FEE = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					EDF9D69E1F2C010800152FEE = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = EDF9D68C1F2C010700152FEE;
+					};
+				};
+			};
+			buildConfigurationList = EDF9D6881F2C010700152FEE /* Build configuration list for PBXProject "CoinBar" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDF9D6841F2C010700152FEE;
+			productRefGroup = EDF9D68E1F2C010700152FEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDF9D68C1F2C010700152FEE /* CoinBar */,
+				EDF9D69E1F2C010800152FEE /* CoinBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDF9D68B1F2C010700152FEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9D6951F2C010700152FEE /* Assets.xcassets in Resources */,
+				EDF9D6981F2C010700152FEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9D69D1F2C010800152FEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDF9D6891F2C010700152FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9D6931F2C010700152FEE /* ViewController.swift in Sources */,
+				EDF9D6911F2C010700152FEE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9D69B1F2C010800152FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9D6A41F2C010800152FEE /* CoinBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDF9D6A11F2C010800152FEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF9D68C1F2C010700152FEE /* CoinBar */;
+			targetProxy = EDF9D6A01F2C010800152FEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDF9D6961F2C010700152FEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF9D6971F2C010700152FEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDF9D6A61F2C010800152FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDF9D6A71F2C010800152FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		EDF9D6A91F2C010800152FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoinBar/CoinBar.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4ZHCQJ2SCM;
+				INFOPLIST_FILE = CoinBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.dev-kiste.CoinBar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EDF9D6AA1F2C010800152FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoinBar/CoinBar.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4ZHCQJ2SCM;
+				INFOPLIST_FILE = CoinBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.dev-kiste.CoinBar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		EDF9D6AC1F2C010800152FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4ZHCQJ2SCM;
+				INFOPLIST_FILE = CoinBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.dev-kiste.CoinBarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinBar.app/Contents/MacOS/CoinBar";
+			};
+			name = Debug;
+		};
+		EDF9D6AD1F2C010800152FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4ZHCQJ2SCM;
+				INFOPLIST_FILE = CoinBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.dev-kiste.CoinBarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinBar.app/Contents/MacOS/CoinBar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDF9D6881F2C010700152FEE /* Build configuration list for PBXProject "CoinBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF9D6A61F2C010800152FEE /* Debug */,
+				EDF9D6A71F2C010800152FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF9D6A81F2C010800152FEE /* Build configuration list for PBXNativeTarget "CoinBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF9D6A91F2C010800152FEE /* Debug */,
+				EDF9D6AA1F2C010800152FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDF9D6AB1F2C010800152FEE /* Build configuration list for PBXNativeTarget "CoinBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF9D6AC1F2C010800152FEE /* Debug */,
+				EDF9D6AD1F2C010800152FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDF9D6851F2C010700152FEE /* Project object */;
+}
