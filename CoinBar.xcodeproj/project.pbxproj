@@ -12,6 +12,7 @@
 		EDF9D6951F2C010700152FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF9D6941F2C010700152FEE /* Assets.xcassets */; };
 		EDF9D6981F2C010700152FEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF9D6961F2C010700152FEE /* Main.storyboard */; };
 		EDF9D6A41F2C010800152FEE /* CoinBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D6A31F2C010800152FEE /* CoinBarTests.swift */; };
+		EDF9D6B01F2C04D700152FEE /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D6AF1F2C04D700152FEE /* NetworkHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		EDF9D69F1F2C010800152FEE /* CoinBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF9D6A31F2C010800152FEE /* CoinBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinBarTests.swift; sourceTree = "<group>"; };
 		EDF9D6A51F2C010800152FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF9D6AF1F2C04D700152FEE /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		EDF9D68F1F2C010700152FEE /* CoinBar */ = {
 			isa = PBXGroup;
 			children = (
+				EDF9D6AE1F2C04C100152FEE /* Network */,
 				EDF9D6901F2C010700152FEE /* AppDelegate.swift */,
 				EDF9D6921F2C010700152FEE /* ViewController.swift */,
 				EDF9D6941F2C010700152FEE /* Assets.xcassets */,
@@ -93,6 +96,14 @@
 				EDF9D6A51F2C010800152FEE /* Info.plist */,
 			);
 			path = CoinBarTests;
+			sourceTree = "<group>";
+		};
+		EDF9D6AE1F2C04C100152FEE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9D6AF1F2C04D700152FEE /* NetworkHandler.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 			files = (
 				EDF9D6931F2C010700152FEE /* ViewController.swift in Sources */,
 				EDF9D6911F2C010700152FEE /* AppDelegate.swift in Sources */,
+				EDF9D6B01F2C04D700152FEE /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
