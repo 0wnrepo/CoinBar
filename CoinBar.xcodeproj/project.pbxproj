@@ -13,6 +13,7 @@
 		EDF9D6981F2C010700152FEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF9D6961F2C010700152FEE /* Main.storyboard */; };
 		EDF9D6A41F2C010800152FEE /* CoinBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D6A31F2C010800152FEE /* CoinBarTests.swift */; };
 		EDF9D6B01F2C04D700152FEE /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D6AF1F2C04D700152FEE /* NetworkHandler.swift */; };
+		EDF9D6BB1F2E10F700152FEE /* CoinObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D6BA1F2E10F700152FEE /* CoinObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		EDF9D6A31F2C010800152FEE /* CoinBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinBarTests.swift; sourceTree = "<group>"; };
 		EDF9D6A51F2C010800152FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDF9D6AF1F2C04D700152FEE /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		EDF9D6BA1F2E10F700152FEE /* CoinObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				EDF9D6AF1F2C04D700152FEE /* NetworkHandler.swift */,
+				EDF9D6BA1F2E10F700152FEE /* CoinObject.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			files = (
 				EDF9D6931F2C010700152FEE /* ViewController.swift in Sources */,
 				EDF9D6911F2C010700152FEE /* AppDelegate.swift in Sources */,
+				EDF9D6BB1F2E10F700152FEE /* CoinObject.swift in Sources */,
 				EDF9D6B01F2C04D700152FEE /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

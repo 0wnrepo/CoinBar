@@ -18,11 +18,12 @@ private enum Errors: Error {
     case noValidHTTPResponseError
     case wrongStatusCodeError(Data?)
     case failedFetchingDataError
-    case noValidJSONResponseError(String?)
+    case noValidJSONResponseError(Data?)
 }
 
-public typealias completion = ((Result<[String: Any]>) -> Void)
+public typealias completion<T> = ((Result<T>) -> Void)
 
+private typealias dataCompletion = ((Result<Data>) -> Void )
 private let baseUrlString = "https://coincap.io"
 
 public struct NetworkHandler {
@@ -30,7 +31,7 @@ public struct NetworkHandler {
     
     private init() {}
     
-    private func get(url: URL, completion: @escaping completion) {
+    private func get(url: URL, completion: @escaping dataCompletion) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             DispatchQueue.main.async {
                 // Finished with error
@@ -46,13 +47,9 @@ public struct NetworkHandler {
                 // status code != 200
                 if response.statusCode != 200 {
                     completion(.error(Errors.wrongStatusCodeError(data)))
+                    return
                 } else {
-                    // no valid json result
-                    guard let json = data.decoded() else {
-                        completion(.error(Errors.noValidJSONResponseError(String(data: data, encoding: .utf8))))
-                        return
-                    }
-                    completion(.success(json))
+                    completion(.success(data))
                 }
             }
             }.resume()
@@ -61,40 +58,31 @@ public struct NetworkHandler {
 
 // MARK: Coin Overview data
 extension NetworkHandler {
-    public func getCoinData(identifier: String, completion: @escaping completion) {
+    public func getCoinData(identifier: String, completion: @escaping completion<CoinObject>) {
         let urlString = baseUrlString + "/page/" + identifier
         guard let url = URL(string: urlString) else {
             completion(.error(Errors.noValidUrlStringError(urlString)))
             return
         }
-        get(url: url, completion: completion)
-    }
-}
-
-
-// MARK: Data converting into a dictionary directly
-private extension Data {
-    func decoded() -> [String: Any]? {
-        var json: [String: Any]? = nil
         
-        do {
-            json = try JSONSerialization.jsonObject(with: self) as? [String: Any]
-            guard let usd = json?["usdPrice"] as? String,
-                let btc = json?["btcPrice"] as? Double,
-                let perc = json?["perc"] as? String else {
-                    return nil
+        get(url: url) { (result) in
+            switch result {
+            case .error(let error):
+                completion(.error(error))
+            case .success(let data):
+                if let object: CoinObject = self.decodeJSON(data: data) {
+                    completion(.success(object))
+                } else {
+                    completion(.error(Errors.noValidJSONResponseError(data)))
+                }
             }
-            
-            json = [
-                "usd": Double(usd)!,
-                "btc": 1.0 / btc,
-                "perc": Double(perc)!
-            ]
-            
-        } catch (let error ) {
-            print("Failed with json", error)
         }
+    }
+    
+    private func decodeJSON<T: Decodable>(data: Data) -> T? {
+        let decoder = JSONDecoder()
+        let decoded = try? decoder.decode(T.self, from: data)
         
-        return json
+        return decoded
     }
 }
